@@ -1,6 +1,6 @@
 # coding: utf-8
 from django.contrib import admin
-from models import Ticket
+from bugtracker.models import Ticket
 
 class TicketAdmin(admin.ModelAdmin):
     list_display = ('closed', 'title', 'text', 'created', 'user')
